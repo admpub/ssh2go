@@ -1,8 +1,4 @@
-
-.go
 .DS_Store
 ._*
-
-vendor
-
+vendor/install
 .*.swp
