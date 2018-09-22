@@ -14,16 +14,16 @@ ssh2go depends on libssh, so make sure you've installed the **Lastest** git vers
 ### use homebrew
 
 ```
-brew install --HEAD https://raw.githubusercontent.com/karfield/ssh2go/master/libssh.rb
+brew install --HEAD https://raw.githubusercontent.com/admpub/ssh2go/master/libssh.rb
 
-go get github.com/karfield/ssh2go
+go get github.com/admpub/ssh2go
 ```
 
 If you have installed `libssh` but not the latest version in Mac OS, you should
 reinstall it:
 
 ```
-brew reinstall --HEAD https://raw.githubusercontent.com/karfield/ssh2go/master/libssh.rb
+brew reinstall --HEAD https://raw.githubusercontent.com/admpub/ssh2go/master/libssh.rb
 brew link --force libssh
 ```
 
@@ -32,9 +32,9 @@ brew link --force libssh
 If you want to build the libssh from scratch, use the './install-libs.sh' to install the prequisitements.
 
 ```
-go get -d github.com/karfield/ssh2go
+go get -d github.com/admpub/ssh2go
 
-cd $GOPATH/src/github.com/karfield/ssh2go
+cd $GOPATH/src/github.com/admpub/ssh2go
 
 git submodule update --init --recursive
 
@@ -49,10 +49,10 @@ go install
 
 Custom a sshd, and run it locally.
 
-Try now or read the [code](https://github.com/karfield/ssh2go/blob/master/examples/ssh2go-simple-sshd/main.go)
+Try now or read the [code](https://github.com/admpub/ssh2go/blob/master/examples/ssh2go-simple-sshd/main.go)
 
 ```
-go install github.com/karfield/ssh2go/examples/ssh2go-simple-sshd
+go install github.com/admpub/ssh2go/examples/ssh2go-simple-sshd
 ```
 
 see some options:
