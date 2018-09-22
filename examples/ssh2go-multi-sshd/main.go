@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/admpub/ssh2go"
 	"github.com/codegangsta/cli"
-	"github.com/karfield/ssh2go"
 )
 
 func main() {

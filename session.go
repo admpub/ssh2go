@@ -171,7 +171,7 @@ func (s Session) GetPollFlags() int {
 // Get the server public key from a session.
 func (s Session) GetPublickey() (*Key, error) {
 	var key *C.ssh_key
-	err := s.apiError("ssh_get_publickey", C.ssh_get_publickey(s.ptr, key))
+	err := s.apiError("ssh_get_server_publickey", C.ssh_get_server_publickey(s.ptr, key))
 	if err != nil {
 		return nil, err
 	}

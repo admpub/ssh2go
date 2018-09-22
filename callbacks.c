@@ -142,9 +142,9 @@ void install_bind_incoming_connection_callback(ssh_bind_callbacks cbs) {
     cbs->incoming_connection = bind_incoming_connection_callback;
 }
 
-void set_bind_callbacks(ssh_bind sshbind, ssh_bind_callbacks_wrapper w) {
+int set_bind_callbacks(ssh_bind sshbind, ssh_bind_callbacks_wrapper w) {
     ssh_callbacks_init(&w->callbacks);
-    ssh_bind_set_callbacks(sshbind, &w->callbacks, w->userdata);
+    return ssh_bind_set_callbacks(sshbind, &w->callbacks, w->userdata);
 }
 
 /**
